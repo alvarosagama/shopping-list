@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getDatabase } from "firebase/database";
-
+import { getFirestore } from "firebase/firestore"; // Atualização para Firestore
 
 const firebaseConfig = {
   apiKey: "AIzaSyAhHBy8T2I8nztDZziThL5p4RiVs3AmGPU",
@@ -12,9 +11,13 @@ const firebaseConfig = {
   appId: "1:73708204221:web:7f0aa0a56ec5fdca1707d4",
 };
 
-
+// Inicializando o Firebase
 const app = initializeApp(firebaseConfig);
-const auth =  getAuth(app);
-const db = getDatabase(app);
 
-export { auth, db};
+// Autenticação
+const auth = getAuth(app);
+
+// Firestore (substituindo o Realtime Database)
+const db = getFirestore(app);
+
+export { auth, db };

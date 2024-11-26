@@ -31,7 +31,7 @@ export default function Index() {
     setEmail("");
     setPassword("");
     setErrorLogin("");
-    router.push("/internas/tasks");
+    router.push("/internas/CriarLista");
   })
   .catch((error) => {
     const errorCode = error.code;

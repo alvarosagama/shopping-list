@@ -34,6 +34,13 @@ export default function Layout() {
                     <MaterialCommunityIcons name = "information-outline" color={color} size={32}/>
                 )
             }} />
+             <Tabs.Screen name="CriarLista" options={{
+                headerTitle: "Criar Lista",
+                tabBarLabel: "Criar lista",
+                tabBarIcon: ({color}) => (
+                    <MaterialCommunityIcons name = "account" color={color} size={32}/>
+                )
+            }} />
         </Tabs>
     );
 }
