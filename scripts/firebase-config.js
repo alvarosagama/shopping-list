@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAExQxKLmBVM30Zd8zpA_WrRMlfEeQ45_U",
-  authDomain: "pra-fazer-app-71aee.firebaseapp.com",
-  databaseURL: "https://pra-fazer-app-71aee-default-rtdb.firebaseio.com",
-  projectId: "pra-fazer-app-71aee",
-  storageBucket: "pra-fazer-app-71aee.appspot.com",
-  messagingSenderId: "1040866220280",
-  appId: "1:1040866220280:web:38abfb59ce59a6ca81c30d"
+  apiKey: "AIzaSyAhHBy8T2I8nztDZziThL5p4RiVs3AmGPU",
+  authDomain: "shopping-list-fff4a.firebaseapp.com",
+  projectId: "shopping-list-fff4a",
+  storageBucket: "shopping-list-fff4a.firebasestorage.app",
+  messagingSenderId: "73708204221",
+  appId: "1:73708204221:web:7f0aa0a56ec5fdca1707d4",
 };
 
 
