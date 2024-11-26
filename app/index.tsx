@@ -43,7 +43,7 @@ export default function Index() {
 
     return (
         <View style={styles.container}>
-            <Image style={styles.logo} source={require('../assets/images/cart')} />
+            <Image style={styles.logo} source={require('../assets/images/cart.png')} />
 
             {errorLogin != null && (
                 <Text style={styles.alert}>{errorLogin}</Text>
