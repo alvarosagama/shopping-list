@@ -9,36 +9,29 @@ export default function Layout() {
                 tabBarStyle: {backgroundColor: "#B0BEC5"},   // Cor da barra de baixo
                 headerTitleAlign: 'center',
                 headerTintColor: '#000',
-                tabBarActiveTintColor: "#FF7043", // Defini a cor do menu ativo na tab bar
-                tabBarInactiveTintColor: "#000" // Denifi a cor do menu inativo na tabela
+                tabBarActiveTintColor: "#2d24d4", // Define a cor do menu ativo na tab bar
+                tabBarInactiveTintColor: "#000" // Define a cor do menu inativo na tabela
             }}
         >
-            <Tabs.Screen name="tasks" options={{
-                headerTitle: "Tarefas",
-                tabBarLabel: "Tarefas",
+            <Tabs.Screen name="CriarLista" options={{
+                headerTitle: "Criar Lista",
+                tabBarLabel: "Criar Lista",
                 tabBarIcon: ({color}) => (
-                    <MaterialCommunityIcons name = "check-circle-outline" color={color} size={32}/>
+                    <MaterialCommunityIcons name = "creation" color={color} size={32}/>
+                )
+            }} />
+             <Tabs.Screen name="ExibirListas" options={{
+                headerTitle: "Exibir Lista",
+                tabBarLabel: "Exibir Lista",
+                tabBarIcon: ({color}) => (
+                    <MaterialCommunityIcons name = "view-list" color={color} size={32}/>
                 )
             }} />
             <Tabs.Screen name="user" options={{
-                headerTitle: "Dados do Usuário",
-                tabBarLabel: "Dados Usuário",
+                headerTitle: "Sair do App",
+                tabBarLabel: "Sair do App",
                 tabBarIcon: ({color}) => (
-                    <MaterialCommunityIcons name = "account" color={color} size={32}/>
-                )
-            }} />
-            <Tabs.Screen name="about" options={{
-                headerTitle: "Sobre o aplicativo",
-                tabBarLabel: "Sobre o App",
-                tabBarIcon: ({color}) => (
-                    <MaterialCommunityIcons name = "information-outline" color={color} size={32}/>
-                )
-            }} />
-             <Tabs.Screen name="CriarLista" options={{
-                headerTitle: "Criar Lista",
-                tabBarLabel: "Criar lista",
-                tabBarIcon: ({color}) => (
-                    <MaterialCommunityIcons name = "account" color={color} size={32}/>
+                    <MaterialCommunityIcons name = "logout-variant" color={color} size={32}/>
                 )
             }} />
         </Tabs>

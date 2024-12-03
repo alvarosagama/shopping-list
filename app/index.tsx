@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     logo: {
         width: 250, // Reduz a largura da logo (ajuste conforme necessário)
         height: 200, // Reduz a altura da logo (ajuste conforme necessário)
-        marginBottom: 5, // Reduz a distância entre a logo e o campo de email
+        marginBottom: 5, // Reduz a distância entre a logo e o campo de emai
         marginTop: -10, // Ajusta a posição para cima, diminuindo o espaço em relação ao topo
     },
     alert: {
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     button: {
-        backgroundColor: '#FF7043',
+        backgroundColor: '#2d24d4',
         padding: 10,
         borderRadius: 10,
         marginBottom: 20,

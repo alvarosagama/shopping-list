@@ -17,7 +17,6 @@ export default function User() {
     }
     return (
         <View style={styles.container}>
-            <Text>Dados do Usuário</Text>
             <TouchableOpacity
                 onPress={logout}
             >
